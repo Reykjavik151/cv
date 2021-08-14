@@ -1,6 +1,13 @@
 import React from "react";
 
-import { Avatar, CardContainer, Container, Title } from "./profile-card.styles";
+import { ThemeSwitcher } from "../ThemeSwitcher";
+import {
+  Avatar,
+  CardContainer,
+  Container,
+  InfoContainer,
+  Title,
+} from "./profile-card.styles";
 import { IProfileCardProps } from "./profile-card.props";
 import { IMAGES } from "../../assets";
 
@@ -9,8 +16,11 @@ export const ProfileCard: React.FC<IProfileCardProps> = () => {
     <Container>
       <CardContainer>
         <Avatar src={IMAGES.ROMAN_PHOTO} />
-        <Title>Roman Andreev</Title>
+        <InfoContainer>
+          <Title>Roman Andreev</Title>
+        </InfoContainer>
       </CardContainer>
+      <ThemeSwitcher />
     </Container>
   );
 };
