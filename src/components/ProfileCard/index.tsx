@@ -6,10 +6,11 @@ import {
   CardContainer,
   Container,
   InfoContainer,
-  Title,
 } from "./profile-card.styles";
 import { IProfileCardProps } from "./profile-card.props";
 import { IMAGES } from "../../assets";
+import { DefaultText } from "../DefaultText";
+import { DefaultTextPreset } from "../DefaultText/default-text.props";
 
 export const ProfileCard: React.FC<IProfileCardProps> = () => {
   return (
@@ -17,7 +18,12 @@ export const ProfileCard: React.FC<IProfileCardProps> = () => {
       <CardContainer>
         <Avatar src={IMAGES.ROMAN_PHOTO} />
         <InfoContainer>
-          <Title>Roman Andreev</Title>
+          <DefaultText preset={DefaultTextPreset.Medium}>
+            Roman Andreev
+          </DefaultText>
+          <DefaultText preset={DefaultTextPreset.Title}>
+            Senior React Native Dev
+          </DefaultText>
         </InfoContainer>
       </CardContainer>
       <ThemeSwitcher />

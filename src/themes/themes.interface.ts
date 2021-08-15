@@ -1,5 +1,6 @@
 export interface ITheme {
   PRIMARY: string;
+  PRIMARY_TEXT: string;
   SECONDARY: string;
-  MAIN_TEXT: string;
+  SECONDARY_TEXT: string;
 }

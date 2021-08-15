@@ -30,7 +30,7 @@ export const ThemeSwitcher: React.FC = () => {
               ? ACTIVE_THEME_OPACITY
               : INACTIVE_THEME_OPACITY
           }
-          color={globalTheme.MAIN_TEXT}
+          color={globalTheme.PRIMARY_TEXT}
         />
       ))}
     </Container>

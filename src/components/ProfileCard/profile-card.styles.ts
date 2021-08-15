@@ -13,7 +13,7 @@ export const Container = styled.div`
 `;
 
 export const CardContainer = styled.div`
-  width: 50%;
+  width: 60%;
   @media (max-width: 1200px) {
     width: 80%;
   }
@@ -31,13 +31,6 @@ export const Avatar = styled.img`
 
 export const InfoContainer = styled.div`
   padding: 2rem 1rem;
-  background-color: yellow;
   flex: 1;
   flex-direction: column;
-`;
-
-export const Title = styled.span`
-  font-size: 4rem;
-  color: ${COLORS.CONCRETE};
-  font-weight: bold;
 `;

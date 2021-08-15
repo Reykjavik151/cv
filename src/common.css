@@ -2,12 +2,33 @@ html {
   height: 100vh;
 }
 
+@media (max-width: 560px) {
+  html {
+    font-size: 8px;
+  }
+}
+
+@media (min-width: 561px) and (max-width: 910px) {
+  html {
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 911px) and (max-width: 1410px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 1411px) {
+  html {
+    font-size: 14px;
+  }
+}
+
 body {
   margin: 0;
   height: 100vh;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
