@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 
 import { ThemeSwitcher } from "../ThemeSwitcher";
 import {
@@ -11,18 +11,27 @@ import { IProfileCardProps } from "./profile-card.props";
 import { IMAGES } from "../../assets";
 import { DefaultText } from "../DefaultText";
 import { DefaultTextPreset } from "../DefaultText/default-text.props";
+import { ThemeContext } from "../ThemeProvider";
 
-export const ProfileCard: React.FC<IProfileCardProps> = () => {
+export const ProfileCard: React.FC<IProfileCardProps> = ({
+  author = "Roman Andreev",
+  position = "Senior React Native Developer",
+  description = "Extra-experienced developer with amazing programming power!",
+  photoSource = IMAGES.ROMAN_PHOTO,
+}) => {
+  const { theme } = useContext(ThemeContext);
+
   return (
     <Container>
       <CardContainer>
-        <Avatar src={IMAGES.ROMAN_PHOTO} />
+        <Avatar src={photoSource} />
         <InfoContainer>
-          <DefaultText preset={DefaultTextPreset.Medium}>
-            Roman Andreev
-          </DefaultText>
-          <DefaultText preset={DefaultTextPreset.Title}>
-            Senior React Native Dev
+          <DefaultText preset={DefaultTextPreset.Title}>{author}</DefaultText>
+          <DefaultText
+            preset={DefaultTextPreset.Medium}
+            color={theme.SECONDARY_TEXT}
+          >
+            {position}
           </DefaultText>
         </InfoContainer>
       </CardContainer>

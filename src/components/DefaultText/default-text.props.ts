@@ -8,4 +8,5 @@ export enum DefaultTextPreset {
 
 export interface IDefaultTextProps {
   preset?: DefaultTextPreset;
+  color?: string;
 }

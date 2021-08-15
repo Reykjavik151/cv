@@ -14,6 +14,7 @@ import {
 export const DefaultText: React.FC<IDefaultTextProps> = ({
   children,
   preset,
+  color,
 }) => {
   const StyledPresetText = useMemo(() => {
     switch (preset) {
@@ -33,7 +34,7 @@ export const DefaultText: React.FC<IDefaultTextProps> = ({
 
   return (
     <StyledContainer>
-      <StyledDefaultText>
+      <StyledDefaultText color={color}>
         <StyledPresetText>{children}</StyledPresetText>
       </StyledDefaultText>
     </StyledContainer>

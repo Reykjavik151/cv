@@ -1,12 +1,14 @@
 import styled from "styled-components";
-import { FONTS } from "../../assets";
 
-import { IThemed } from "../../utils/types";
+import { FONTS } from "../../assets";
 
 export const StyledContainer = styled.div``;
 
-export const StyledDefaultText = styled.span`
-  color: ${({ theme }: IThemed) => theme.PRIMARY_TEXT};
+interface IStyledDefaultTextProps {
+  color?: string;
+}
+export const StyledDefaultText = styled.span<IStyledDefaultTextProps>`
+  color: ${({ theme, color }) => color ?? theme.PRIMARY_TEXT};
   font-family: ${FONTS.ROBOTO};
 `;
 

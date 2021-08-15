@@ -4,25 +4,37 @@ html {
 
 @media (max-width: 560px) {
   html {
+    font-size: 6.5px;
+  }
+}
+
+@media (min-width: 561px) and (max-width: 710px) {
+  html {
     font-size: 8px;
   }
 }
 
-@media (min-width: 561px) and (max-width: 910px) {
+@media (min-width: 711px) and (max-width: 914px) {
   html {
     font-size: 10px;
   }
 }
 
-@media (min-width: 911px) and (max-width: 1410px) {
+@media (min-width: 915px) and (max-width: 1000px) {
+  html {
+    font-size: 11px;
+  }
+}
+
+@media (min-width: 1001px) and (max-width: 1130px) {
   html {
     font-size: 12px;
   }
 }
 
-@media (min-width: 1411px) {
+@media (min-width: 1131px) {
   html {
-    font-size: 14px;
+    font-size: 13.5px;
   }
 }
 

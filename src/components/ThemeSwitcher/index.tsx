@@ -5,7 +5,7 @@ import {
   ACTIVE_THEME_OPACITY,
   INACTIVE_THEME_OPACITY,
   THEMES_BUTTONS,
-} from "./data";
+} from "./theme-switcher.data";
 import { Container } from "./theme-switcher.styles";
 import { ITheme } from "../../themes/themes.interface";
 import { ThemeContext } from "../ThemeProvider";
