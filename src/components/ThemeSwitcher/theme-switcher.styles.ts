@@ -2,18 +2,11 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   position: absolute;
-  right: 0;
-  bottom: 0;
+  right: 0.5rem;
+  bottom: 0.5rem;
+  width: 6.5rem;
   flex-direction: row;
+  display: flex;
+  justify-content: space-around;
   align-items: center;
-  width: 20rem;
-  height: 4rem;
-  background-color: red;
-`;
-
-export const ThemeButton = styled.img`
-  width: 2rem;
-  height: 2rem;
-  background-color: green;
-  margin: 0 2rem;
 `;
