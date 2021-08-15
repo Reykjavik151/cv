@@ -8,16 +8,16 @@ import {
   InfoContainer,
 } from "./profile-card.styles";
 import { IProfileCardProps } from "./profile-card.props";
-import { IMAGES } from "../../assets";
 import { DefaultText } from "../DefaultText";
 import { DefaultTextPreset } from "../DefaultText/default-text.props";
 import { ThemeContext } from "../ThemeProvider";
+import { PROFILE_CARD_PREDEFINED_DATA } from "./profile-card.data";
 
 export const ProfileCard: React.FC<IProfileCardProps> = ({
-  author = "Roman Andreev",
-  position = "Senior React Native Developer",
-  description = "Extra-experienced developer with amazing programming power!",
-  photoSource = IMAGES.ROMAN_PHOTO,
+  author = PROFILE_CARD_PREDEFINED_DATA.AUTHOR,
+  position = PROFILE_CARD_PREDEFINED_DATA.POSITION,
+  description = PROFILE_CARD_PREDEFINED_DATA.DESCRIPTION,
+  photoSource = PROFILE_CARD_PREDEFINED_DATA.PHOTO_SOURCE,
 }) => {
   const { theme } = useContext(ThemeContext);
 
