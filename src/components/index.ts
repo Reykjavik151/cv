@@ -1,3 +1,4 @@
+export * from "./ContentWrapper";
 export * from "./DefaultText";
 export * from "./FullWidthSeparator";
 export * from "./PageContainer";

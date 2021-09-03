@@ -1,6 +1,7 @@
 import React from "react";
 
 import {
+  ContentWrapper,
   FullWidthSeparator,
   PageContainer,
   ProfileCard,
@@ -12,6 +13,7 @@ export const MainPage: React.FC<IMainPageProps> = () => {
     <PageContainer>
       <ProfileCard />
       <FullWidthSeparator height={1} />
+      <ContentWrapper></ContentWrapper>
     </PageContainer>
   );
 };
