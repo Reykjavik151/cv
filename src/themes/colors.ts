@@ -8,4 +8,5 @@ export const COLORS = {
   CAPE_HONEY: "#FFE6AB",
   ALMOST_WHITE: "#FAFAFA",
   ALMOST_BLACK: "#222222",
+  GRAY: "#666666",
 };

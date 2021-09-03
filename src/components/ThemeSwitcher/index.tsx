@@ -20,19 +20,22 @@ export const ThemeSwitcher: React.FC = () => {
 
   return (
     <Container>
-      {map(THEMES_BUTTONS, ({ id, theme, Icon, size }) => (
-        <Icon
-          key={`theme-button-${id}`}
-          onClick={getOnThemeButtonPress(theme)}
-          size={size}
-          opacity={
-            globalTheme === theme
-              ? ACTIVE_THEME_OPACITY
-              : INACTIVE_THEME_OPACITY
-          }
-          color={globalTheme.PRIMARY_TEXT}
-        />
-      ))}
+      {map(THEMES_BUTTONS, ({ id, theme, Icon, size }) => {
+        const isActive = globalTheme === theme;
+        return (
+          <Icon
+            key={`theme-button-${id}`}
+            onClick={getOnThemeButtonPress(theme)}
+            size={size}
+            opacity={isActive ? ACTIVE_THEME_OPACITY : INACTIVE_THEME_OPACITY}
+            color={
+              isActive
+                ? globalTheme.PRIMARY_TEXT
+                : globalTheme.SECONDARY_ADDITIONAL
+            }
+          />
+        );
+      })}
     </Container>
   );
 };
