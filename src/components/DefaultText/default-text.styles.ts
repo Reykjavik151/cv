@@ -13,13 +13,20 @@ export const StyledDefaultText = styled.span<IStyledDefaultTextProps>`
 `;
 
 export const StyledTitle = styled.span`
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: bold;
 `;
-export const StyledDescription = styled.span``;
-export const StyledSmallText = styled.span``;
+export const StyledDescription = styled.span`
+  font-size: 1.6rem;
+`;
+export const StyledSmallText = styled.span`
+  font-size: 1.8rem;
+`;
 export const StyledMediumText = styled.span`
   font-size: 2rem;
   font-weight: 500;
 `;
-export const StyledLargeText = styled.span``;
+export const StyledLargeText = styled.span`
+  font-size: 2.5rem;
+  font-weight: 500;
+`;
