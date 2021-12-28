@@ -1,12 +1,7 @@
 import React, { useContext } from "react";
 
 import { ThemeSwitcher } from "../ThemeSwitcher";
-import {
-  Avatar,
-  CardContainer,
-  Container,
-  InfoContainer,
-} from "./profile-card.styles";
+import { Avatar, CardContainer, Container, InfoContainer } from "./profile-card.styles";
 import { IProfileCardProps } from "./profile-card.props";
 import { DefaultText } from "../DefaultText";
 import { DefaultTextPreset } from "../DefaultText/default-text.props";
@@ -26,11 +21,10 @@ export const ProfileCard: React.FC<IProfileCardProps> = ({
       <CardContainer>
         <Avatar src={photoSource} />
         <InfoContainer>
-          <DefaultText preset={DefaultTextPreset.Title}>{author}</DefaultText>
-          <DefaultText
-            preset={DefaultTextPreset.Medium}
-            color={theme.SECONDARY_TEXT}
-          >
+          <DefaultText preset={DefaultTextPreset.Title} color={theme.PRIMARY_ADDITIONAL}>
+            {author}
+          </DefaultText>
+          <DefaultText preset={DefaultTextPreset.Medium} color={theme.SECONDARY_TEXT}>
             {position}
           </DefaultText>
         </InfoContainer>

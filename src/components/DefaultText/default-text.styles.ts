@@ -19,6 +19,16 @@ export const StyledTitle = styled.span`
 export const StyledDescription = styled.span`
   font-size: 1.6rem;
 `;
+export const StyledXXSmallTitle = styled.span`
+  font-size: 1.1rem;
+  font-weight: bold;
+`;
+export const StyledXXSmallText = styled.span`
+  font-size: 1.1rem;
+`;
+export const StyledXSmallText = styled.span`
+  font-size: 1.3rem;
+`;
 export const StyledSmallText = styled.span`
   font-size: 1.8rem;
 `;

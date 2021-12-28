@@ -5,6 +5,7 @@ import {
   FullWidthSeparator,
   PageContainer,
   ProfileCard,
+  ProjectsSection,
 } from "../../components";
 import { IMainPageProps } from "./main.props";
 
@@ -13,7 +14,9 @@ export const MainPage: React.FC<IMainPageProps> = () => {
     <PageContainer>
       <ProfileCard />
       <FullWidthSeparator height={1} />
-      <ContentWrapper></ContentWrapper>
+      <ContentWrapper>
+        <ProjectsSection />
+      </ContentWrapper>
     </PageContainer>
   );
 };

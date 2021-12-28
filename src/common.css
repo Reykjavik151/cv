@@ -4,37 +4,37 @@ html {
 
 @media (max-width: 560px) {
   html {
-    font-size: 7px;
+    font-size: 10px;
   }
 }
 
 @media (min-width: 561px) and (max-width: 710px) {
   html {
-    font-size: 8px;
+    font-size: 10px;
   }
 }
 
 @media (min-width: 711px) and (max-width: 914px) {
   html {
-    font-size: 10px;
+    font-size: 12px;
   }
 }
 
 @media (min-width: 915px) and (max-width: 1000px) {
   html {
-    font-size: 11px;
+    font-size: 13px;
   }
 }
 
 @media (min-width: 1001px) and (max-width: 1130px) {
   html {
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 
 @media (min-width: 1131px) {
   html {
-    font-size: 13.5px;
+    font-size: 15.5px;
   }
 }
 
@@ -46,6 +46,5 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }

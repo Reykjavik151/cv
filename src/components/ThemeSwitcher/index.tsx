@@ -13,10 +13,7 @@ import { ThemeContext } from "../ThemeProvider";
 export const ThemeSwitcher: React.FC = () => {
   const { theme: globalTheme, setTheme } = useContext(ThemeContext);
 
-  const getOnThemeButtonPress = useCallback(
-    (theme: ITheme) => () => setTheme(theme),
-    [setTheme]
-  );
+  const getOnThemeButtonPress = useCallback((theme: ITheme) => () => setTheme(theme), [setTheme]);
 
   return (
     <Container>
@@ -28,11 +25,7 @@ export const ThemeSwitcher: React.FC = () => {
             onClick={getOnThemeButtonPress(theme)}
             size={size}
             opacity={isActive ? ACTIVE_THEME_OPACITY : INACTIVE_THEME_OPACITY}
-            color={
-              isActive
-                ? globalTheme.PRIMARY_TEXT
-                : globalTheme.SECONDARY_ADDITIONAL
-            }
+            color={isActive ? globalTheme.PRIMARY_ADDITIONAL : globalTheme.SECONDARY_ADDITIONAL}
           />
         );
       })}

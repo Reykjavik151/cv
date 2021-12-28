@@ -4,7 +4,6 @@ export const CenteredContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  paddingTop: 32px;
 `;
 
 export const ContentContainer = styled.div`
