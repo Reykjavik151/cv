@@ -31,6 +31,7 @@ export const PROJECTS_PREDEFINED_DATA: IProject[] = [
     ],
     appLink: "https://apps.apple.com/ca/app/onfire-messenger/id1481054417",
   },
+
   {
     name: "GoHeja",
     teamAmount: "3",
@@ -58,6 +59,7 @@ export const PROJECTS_PREDEFINED_DATA: IProject[] = [
     ],
     appLink: "https://apps.apple.com/us/app/goheja/id1488438214?l=uk",
   },
+
   {
     name: "Truevo Business",
     teamAmount: "4",
@@ -88,8 +90,32 @@ export const PROJECTS_PREDEFINED_DATA: IProject[] = [
     ],
     appLink: "https://apps.apple.com/za/app/truevo-business/id1511523105",
   },
+
   {
-    name: "CredWallet",
+    name: "Jesus Experience",
+    teamAmount: "1",
+    mainFeatures: ["Apple TV & iPad support", "Videos with bookmarks", "Amazing carousels"],
+    responsibilities: [
+      ProjectResponsibility.Development,
+      ProjectResponsibility.Support,
+      ProjectResponsibility.TestsCoverage,
+      ProjectResponsibility.Deploy,
+      ProjectResponsibility.CustomerCommunication,
+    ],
+    technologies: [
+      ProgrammingTechologyName.ReactNative,
+      ProgrammingTechologyName.Redux,
+      ProgrammingTechologyName.ReduxSaga,
+      ProgrammingTechologyName.ReduxPersist,
+      ProgrammingTechologyName.ReactNavigation,
+      ProgrammingTechologyName.RNDebugger,
+      ProgrammingTechologyName.Axios,
+    ],
+    appLink: "https://apps.apple.com/us/app/experience-jesus/id1271102213",
+  },
+
+  {
+    name: "MIT: CredWallet",
     teamAmount: "1",
     mainFeatures: [
       "Full local app with strong encryption",
@@ -117,6 +143,31 @@ export const PROJECTS_PREDEFINED_DATA: IProject[] = [
     ],
     appLink: "https://github.com/digitalcredentials/cred-wallet",
   },
+
+  {
+    name: "Keyri",
+    teamAmount: "3",
+    mainFeatures: [
+      "YCombinator startup",
+      "Strong authorization encryption",
+      "Deeplinking",
+      "Secure screen with FaceID/TouchID",
+      "Smooth animations",
+    ],
+    responsibilities: [ProjectResponsibility.Development, ProjectResponsibility.Support],
+    technologies: [
+      ProgrammingTechologyName.ReactNative,
+      ProgrammingTechologyName.TypeScript,
+      ProgrammingTechologyName.Redux,
+      ProgrammingTechologyName.ReduxSaga,
+      ProgrammingTechologyName.ReduxPersist,
+      ProgrammingTechologyName.ReactNavigation,
+      ProgrammingTechologyName.Reactotron,
+      ProgrammingTechologyName.Fastlane,
+    ],
+    appLink: "https://apps.apple.com/ua/app/keyri/id1514738138",
+  },
+
   {
     // BeatTheMarket
     name: "NDA",
@@ -148,6 +199,7 @@ export const PROJECTS_PREDEFINED_DATA: IProject[] = [
       ProgrammingTechologyName.Fastlane,
     ],
   },
+
   {
     name: "Loop Flow Messenger",
     teamAmount: "3",
@@ -155,6 +207,7 @@ export const PROJECTS_PREDEFINED_DATA: IProject[] = [
       "Monorepo Architecture",
       "Shared module across all three apps",
       "Real-time chat",
+      "Deeplinking",
       "Optimised lists with boosted speed for iOS & Android",
       "Firebase Reative Socket Pagination",
       "Social media login",
@@ -190,6 +243,7 @@ export const PROJECTS_PREDEFINED_DATA: IProject[] = [
     ],
     appLink: "https://apps.apple.com/ie/app/loop-flow-messenger/id1541000589",
   },
+
   {
     // MasterHealth
     name: "NDA",
@@ -221,6 +275,7 @@ export const PROJECTS_PREDEFINED_DATA: IProject[] = [
       ProgrammingTechologyName.Bitrise,
     ],
   },
+
   {
     name: "Klarstein",
     teamAmount: "8",
@@ -230,6 +285,7 @@ export const PROJECTS_PREDEFINED_DATA: IProject[] = [
       "Own native library",
       "Well-encrypted API calls",
       "Invites through deeplinking",
+      "Social media login",
     ],
     responsibilities: [
       ProjectResponsibility.Development,
@@ -261,6 +317,7 @@ export const PROJECTS_PREDEFINED_DATA: IProject[] = [
     ],
     appLink: "https://apps.apple.com/us/app/klarstein/id1479571307",
   },
+
   {
     // Sarafun
     name: "NDA",

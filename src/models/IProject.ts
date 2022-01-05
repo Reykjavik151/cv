@@ -19,6 +19,7 @@ export enum ProgrammingTechologyName {
   ReactNavigation = "React Navigation",
 
   // Debugging
+  RNDebugger = "RNDebugger",
   Reactotron = "Reactotron",
   Flipper = "Flipper",
 
