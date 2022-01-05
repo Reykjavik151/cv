@@ -24,7 +24,7 @@ export const ProfileCard: React.FC<IProfileCardProps> = ({
           <DefaultText preset={DefaultTextPreset.Title} color={theme.PRIMARY_ADDITIONAL}>
             {author}
           </DefaultText>
-          <DefaultText preset={DefaultTextPreset.Medium} color={theme.SECONDARY_TEXT}>
+          <DefaultText preset={DefaultTextPreset.Small} color={theme.SECONDARY_TEXT}>
             {position}
           </DefaultText>
         </InfoContainer>

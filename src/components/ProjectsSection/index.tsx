@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import _ from "lodash";
 
-import { FaCheckSquare, FaCompress } from "react-icons/fa";
+import { FaCheckSquare, FaCompress, FaPeopleCarry } from "react-icons/fa";
 import {
   Container,
   ProjectContainer,
@@ -10,6 +10,7 @@ import {
   FeaturesContainer,
   ResponsibilitiesContainer,
   FlexRow,
+  TeamAmountContainer,
 } from "./projects-section.styles";
 import { IProjectsSectionProps } from "./projects-section.props";
 import { DefaultText } from "../DefaultText";
@@ -28,9 +29,21 @@ export const ProjectsSection: React.FC<IProjectsSectionProps> = ({
     <Container>
       {_.map(projects, (project, index) => (
         <ProjectContainer key={`project-${project.name}-${index}`}>
-          <DefaultText preset={DefaultTextPreset.Medium} color={theme.SECONDARY}>
-            {project.name}
-          </DefaultText>
+          <FlexRow>
+            <DefaultText preset={DefaultTextPreset.Medium} color={theme.SECONDARY}>
+              {index + 1}. {project.name}
+            </DefaultText>
+            <TeamAmountContainer>
+              <FaPeopleCarry
+                size={26}
+                color={theme.SECONDARY_TEXT}
+                style={{ marginRight: "0.3rem" }}
+              />
+              <DefaultText preset={DefaultTextPreset.XXSmallTitle} color={theme.SECONDARY_TEXT}>
+                {project.teamAmount}
+              </DefaultText>
+            </TeamAmountContainer>
+          </FlexRow>
 
           {!!project.appLink && (
             <DefaultLink

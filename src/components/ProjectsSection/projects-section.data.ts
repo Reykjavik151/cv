@@ -197,7 +197,8 @@ export const PROJECTS_PREDEFINED_DATA: IProject[] = [
     mainFeatures: [
       "Amazing habit-matching for every user by Sign Up process",
       "Comprehensive Amplitude analytic",
-      "",
+      "Awesome animations",
+      "Events Calendar",
     ],
     responsibilities: [
       ProjectResponsibility.Development,

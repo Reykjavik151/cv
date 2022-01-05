@@ -48,3 +48,13 @@ export const FlexRow = styled.div`
   flex-direction: row;
   align-items: center;
 `;
+
+export const TeamAmountContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: ${({ theme }: IThemed) => theme.SECONDARY};
+  border-radius: 100px;
+  margin-left: 0.8rem;
+  padding: 3px 0.5rem;
+`;
