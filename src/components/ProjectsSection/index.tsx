@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import _ from "lodash";
 
-import { FaCheckSquare, FaCompress, FaPeopleCarry } from "react-icons/fa";
+import { FaCheckSquare, FaCompress, FaUserFriends } from "react-icons/fa";
 import {
   Container,
   ProjectContainer,
@@ -34,8 +34,8 @@ export const ProjectsSection: React.FC<IProjectsSectionProps> = ({
               {index + 1}. {project.name}
             </DefaultText>
             <TeamAmountContainer>
-              <FaPeopleCarry
-                size={26}
+              <FaUserFriends
+                size={20}
                 color={theme.SECONDARY_TEXT}
                 style={{ marginRight: "0.3rem" }}
               />
