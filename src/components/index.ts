@@ -1,4 +1,5 @@
 export * from "./ContentWrapper";
+export * from "./DefaultLink";
 export * from "./DefaultText";
 export * from "./FullWidthSeparator";
 export * from "./PageContainer";

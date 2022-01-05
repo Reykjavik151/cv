@@ -11,10 +11,18 @@ export const ProjectContainer = styled.div`
   margin-bottom: 2rem;
 `;
 
+export const FeaturesContainer = styled.div`
+  margin-top: 1.5rem;
+`;
+
+export const ResponsibilitiesContainer = styled.div`
+  margin-top: 1.5rem;
+`;
+
 export const TechnologiesContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
-  margin: 1rem 0px;
+  margin: 1.5rem 0px;
 
   @media (min-width: 2000px) {
     width: 40%;
@@ -33,4 +41,10 @@ export const TechnologyContainer = styled.div`
   border-radius: 100px;
   margin-right: 0.8rem;
   margin-bottom: 0.7rem;
+`;
+
+export const FlexRow = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 `;

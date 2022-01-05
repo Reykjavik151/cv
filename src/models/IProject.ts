@@ -41,6 +41,9 @@ export enum ProgrammingTechologyName {
   Bitrise = "Bitrise",
   CircleCI = "CircleCI",
 
+  // Testing
+  Jest = "Jest",
+
   // Charts
   ChartsWrapper = "Charts Wrapper",
   VictoryCharts = "Victory Charts",
@@ -54,7 +57,7 @@ export enum ProgrammingTechologyName {
 }
 
 export enum ProjectResponsibility {
-  Architecture = "Architecture Setup",
+  Architecture = "Architecture setup",
   Development = "Full-cycle development",
   Support = "Support after MVP phase",
   Documentation = "Code documentation",
@@ -64,6 +67,7 @@ export enum ProjectResponsibility {
   TeamLeading = "Team leading",
   CodeReview = "Code review",
   Deploy = "Deploying to the stores",
+  TestsCoverage = "Tests coverage",
 }
 
 export interface IProject {
