@@ -1,6 +1,116 @@
-import { IProject, ProgrammingTechologyName, ProjectResponsibility } from "../../models/IProject";
+import {
+  IProject,
+  ProgrammingTechologyName,
+  ProjectLinkType,
+  ProjectResponsibility,
+} from "../../models/IProject";
 
 export const PROJECTS_PREDEFINED_DATA: IProject[] = [
+  {
+    name: "AnimaAI",
+    teamAmount: "8",
+    mainFeatures: [
+      "Smart AI chat for conversations",
+      "React Native for 3 platforms: Android, iOS, Web",
+      "Monorepo Architecture for supporting a lot of apps from one repo",
+      "Best-optimised lists for all platforms",
+      "A lot of smooth interactive animations",
+      "Different message possibilities including audio messages",
+      "Gamification with awards, rewards and XP system",
+    ],
+    responsibilities: [
+      ProjectResponsibility.Architecture,
+      ProjectResponsibility.CodeReview,
+      ProjectResponsibility.TestsCoverage,
+      ProjectResponsibility.Documentation,
+      ProjectResponsibility.Development,
+      ProjectResponsibility.Support,
+      ProjectResponsibility.CustomerCommunication,
+    ],
+    technologies: [
+      ProgrammingTechologyName.ReactNative,
+      ProgrammingTechologyName.ReactNativeWeb,
+      ProgrammingTechologyName.TypeScript,
+      ProgrammingTechologyName.ReactNavigation,
+      ProgrammingTechologyName.Redux,
+      ProgrammingTechologyName.ReduxSaga,
+      ProgrammingTechologyName.ReduxPersist,
+      ProgrammingTechologyName.Reactotron,
+      ProgrammingTechologyName.LottieAnimation,
+      ProgrammingTechologyName.Bitrise,
+      ProgrammingTechologyName.Context,
+      ProgrammingTechologyName.Jest,
+      ProgrammingTechologyName.I18n,
+      ProgrammingTechologyName.Flipper,
+      ProgrammingTechologyName.AmplitudeAnalytic,
+      ProgrammingTechologyName.Axios,
+      ProgrammingTechologyName.StripeIAP,
+    ],
+    appLinks: [
+      {
+        type: ProjectLinkType.IOS,
+        appLink: "https://apps.apple.com/app/anima-ai-friend-virtual-chat/id1537239242",
+      },
+      {
+        type: ProjectLinkType.Android,
+        appLink:
+          "https://play.google.com/store/apps/details?id=anima.virtual.ai.robot.friend&hl=en_US",
+      },
+      {
+        type: ProjectLinkType.Web,
+        appLink: "https://myanima.ai/",
+      },
+    ],
+  },
+
+  {
+    name: "MatchaAI",
+    teamAmount: "12",
+    mainFeatures: [
+      "Smart AI chat for conversations",
+      "React Native for 2 platforms: Android, iOS",
+      "Monorepo Architecture for supporting a lot of apps from one repo",
+      "Best-optimised lists for all platforms",
+      "A lot of smooth interactive animations",
+      "Different message possibilities including audio messages",
+      "Strong analytic and logging system",
+    ],
+    responsibilities: [
+      ProjectResponsibility.Architecture,
+      ProjectResponsibility.CodeReview,
+      ProjectResponsibility.TestsCoverage,
+      ProjectResponsibility.Documentation,
+      ProjectResponsibility.Development,
+      ProjectResponsibility.Support,
+      ProjectResponsibility.CustomerCommunication,
+    ],
+    technologies: [
+      ProgrammingTechologyName.ReactNative,
+      ProgrammingTechologyName.TypeScript,
+      ProgrammingTechologyName.ReactNavigation,
+      ProgrammingTechologyName.Redux,
+      ProgrammingTechologyName.ReduxSaga,
+      ProgrammingTechologyName.ReduxPersist,
+      ProgrammingTechologyName.LottieAnimation,
+      ProgrammingTechologyName.Bitrise,
+      ProgrammingTechologyName.I18n,
+      ProgrammingTechologyName.Flipper,
+      ProgrammingTechologyName.AmplitudeAnalytic,
+      ProgrammingTechologyName.Axios,
+    ],
+    appLinks: [
+      {
+        type: ProjectLinkType.IOS,
+        appLink: "https://apps.apple.com/in/app/matcha-character-ai-chat-bot/id6455986674",
+      },
+      {
+        type: ProjectLinkType.Android,
+        appLink:
+          "https://play.google.com/store/apps/details?id=ai.character.chat.bots.matcha.app&hl=en_US",
+      },
+    ],
+  },
+
   {
     name: "CitizenRemote",
     teamAmount: "14",
@@ -39,7 +149,16 @@ export const PROJECTS_PREDEFINED_DATA: IProject[] = [
       ProgrammingTechologyName.FirebaseAnalytic,
       ProgrammingTechologyName.FirebaseAuth,
     ],
-    appLink: "https://apps.apple.com/gb/app/citizen-remote/id1619297937",
+    appLinks: [
+      {
+        type: ProjectLinkType.IOS,
+        appLink: "https://apps.apple.com/gb/app/citizen-remote/id1619297937",
+      },
+      {
+        type: ProjectLinkType.Android,
+        appLink: "https://play.google.com/store/apps/details?id=com.citizenremote&hl=en_GB&gl=US",
+      },
+    ],
   },
 
   {
@@ -81,7 +200,12 @@ export const PROJECTS_PREDEFINED_DATA: IProject[] = [
       ProgrammingTechologyName.I18n,
       ProgrammingTechologyName.CircleCI,
     ],
-    appLink: "https://apps.apple.com/us/app/klarstein/id1479571307",
+    appLinks: [
+      {
+        type: ProjectLinkType.IOS,
+        appLink: "https://apps.apple.com/us/app/klarstein/id1479571307",
+      },
+    ],
   },
 
   {
@@ -125,7 +249,12 @@ export const PROJECTS_PREDEFINED_DATA: IProject[] = [
       ProgrammingTechologyName.WebSockets,
       ProgrammingTechologyName.Fastlane,
     ],
-    appLink: "https://apps.apple.com/ie/app/loop-flow-messenger/id1541000589",
+    appLinks: [
+      {
+        type: ProjectLinkType.IOS,
+        appLink: "https://apps.apple.com/ie/app/loop-flow-messenger/id1541000589",
+      },
+    ],
   },
 
   {
@@ -156,7 +285,12 @@ export const PROJECTS_PREDEFINED_DATA: IProject[] = [
       ProgrammingTechologyName.FormikYup,
       ProgrammingTechologyName.Fastlane,
     ],
-    appLink: "https://apps.apple.com/za/app/truevo-business/id1511523105",
+    appLinks: [
+      {
+        type: ProjectLinkType.IOS,
+        appLink: "https://apps.apple.com/za/app/truevo-business/id1511523105",
+      },
+    ],
   },
 
   {
@@ -180,7 +314,12 @@ export const PROJECTS_PREDEFINED_DATA: IProject[] = [
       ProgrammingTechologyName.Reactotron,
       ProgrammingTechologyName.Fastlane,
     ],
-    appLink: "https://apps.apple.com/ua/app/keyri/id1514738138",
+    appLinks: [
+      {
+        type: ProjectLinkType.IOS,
+        appLink: "https://apps.apple.com/ua/app/keyri/id1514738138",
+      },
+    ],
   },
 
   {
@@ -211,7 +350,12 @@ export const PROJECTS_PREDEFINED_DATA: IProject[] = [
       ProgrammingTechologyName.WebSockets,
       ProgrammingTechologyName.Fastlane,
     ],
-    appLink: "https://apps.apple.com/ca/app/onfire-messenger/id1481054417",
+    appLinks: [
+      {
+        type: ProjectLinkType.IOS,
+        appLink: "https://apps.apple.com/ca/app/onfire-messenger/id1481054417",
+      },
+    ],
   },
 
   {
@@ -239,7 +383,12 @@ export const PROJECTS_PREDEFINED_DATA: IProject[] = [
       ProgrammingTechologyName.WebSockets,
       ProgrammingTechologyName.Fastlane,
     ],
-    appLink: "https://apps.apple.com/us/app/goheja/id1488438214?l=uk",
+    appLinks: [
+      {
+        type: ProjectLinkType.IOS,
+        appLink: "https://apps.apple.com/us/app/goheja/id1488438214?l=uk",
+      },
+    ],
   },
 
   {
@@ -262,7 +411,12 @@ export const PROJECTS_PREDEFINED_DATA: IProject[] = [
       ProgrammingTechologyName.RNDebugger,
       ProgrammingTechologyName.Axios,
     ],
-    appLink: "https://apps.apple.com/us/app/experience-jesus/id1271102213",
+    appLinks: [
+      {
+        type: ProjectLinkType.IOS,
+        appLink: "https://apps.apple.com/us/app/experience-jesus/id1271102213",
+      },
+    ],
   },
 
   {
@@ -292,7 +446,12 @@ export const PROJECTS_PREDEFINED_DATA: IProject[] = [
       ProgrammingTechologyName.I18n,
       ProgrammingTechologyName.FormikYup,
     ],
-    appLink: "https://github.com/digitalcredentials/cred-wallet",
+    appLinks: [
+      {
+        type: ProjectLinkType.Web,
+        appLink: "https://github.com/digitalcredentials/cred-wallet",
+      },
+    ],
   },
 
   {
@@ -426,39 +585,5 @@ export const PROJECTS_PREDEFINED_DATA: IProject[] = [
       ProgrammingTechologyName.I18n,
       ProgrammingTechologyName.Fastlane,
     ],
-  },
-
-  {
-    name: "AnimaAI",
-    teamAmount: "8",
-    mainFeatures: [
-      "Smart AI chat for conversations",
-      "React Native for 3 platforms: Android, iOS, Web",
-      "Monorepo Architecture for supporting a lot of apps from one repo",
-      "Best-optimised lists for all platforms",
-      "A lot of smooth interactive animations",
-      "Different message possibilities including audio messages",
-      "Gamification with awards, rewards and XP system",
-    ],
-    responsibilities: [
-      ProjectResponsibility.Architecture,
-      ProjectResponsibility.CodeReview,
-      ProjectResponsibility.TestsCoverage,
-      ProjectResponsibility.Documentation,
-      ProjectResponsibility.Development,
-      ProjectResponsibility.Support,
-      ProjectResponsibility.CustomerCommunication,
-    ],
-    technologies: [
-      ProgrammingTechologyName.ReactNative,
-      ProgrammingTechologyName.TypeScript,
-      ProgrammingTechologyName.ReactNavigation,
-      ProgrammingTechologyName.Redux,
-      ProgrammingTechologyName.ReduxSaga,
-      ProgrammingTechologyName.ReduxPersist,
-      ProgrammingTechologyName.Reactotron,
-      ProgrammingTechologyName.Jest,
-    ],
-    appLink: "https://apps.apple.com/app/anima-ai-friend-virtual-chat/id1537239242",
   },
 ];

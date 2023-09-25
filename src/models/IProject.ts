@@ -50,6 +50,7 @@ export enum ProgrammingTechologyName {
   VictoryCharts = "Victory Charts",
 
   // Different
+  LottieAnimation = "Lottie Animation",
   ReduxPersist = "Redux Persist",
   FormikYup = "Formik+Yup",
   Mapbox = "Mapbox",
@@ -71,11 +72,17 @@ export enum ProjectResponsibility {
   TestsCoverage = "Tests coverage",
 }
 
+export enum ProjectLinkType {
+  IOS = "iOS",
+  Android = "Android",
+  Web = "Web",
+}
+
 export interface IProject {
   name: string;
   teamAmount: string;
   technologies: ProgrammingTechologyName[];
   mainFeatures: string[];
   responsibilities: ProjectResponsibility[];
-  appLink?: string;
+  appLinks?: { type: ProjectLinkType; appLink: string }[];
 }

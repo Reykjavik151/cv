@@ -1,7 +1,14 @@
-import React, { useContext } from "react";
+import React, { useCallback, useContext } from "react";
 import _ from "lodash";
 
-import { FaCheckSquare, FaCompress, FaUserFriends } from "react-icons/fa";
+import {
+  FaCheckSquare,
+  FaCompress,
+  FaUserFriends,
+  FaApple,
+  FaGooglePlay,
+  FaGlobe,
+} from "react-icons/fa";
 import {
   Container,
   ProjectContainer,
@@ -19,11 +26,32 @@ import { DefaultTextPreset } from "../DefaultText/default-text.props";
 import { ThemeContext } from "../ThemeProvider";
 import { PROJECTS_PREDEFINED_DATA } from "./projects-section.data";
 import { DefaultLinkPreset } from "../DefaultLink/default-link.props";
+import { ProjectLinkType } from "../../models/IProject";
 
 export const ProjectsSection: React.FC<IProjectsSectionProps> = ({
   projects = PROJECTS_PREDEFINED_DATA,
 }) => {
   const { theme } = useContext(ThemeContext);
+
+  const renderLinkTypeIcon = useCallback(
+    (type: ProjectLinkType) => {
+      const iconProps = {
+        size: 20,
+        color: theme.PRIMARY_TEXT,
+        style: { marginRight: "0.3rem" },
+      };
+
+      switch (type) {
+        case ProjectLinkType.IOS:
+          return <FaApple {...iconProps} />;
+        case ProjectLinkType.Android:
+          return <FaGooglePlay {...iconProps} />;
+        case ProjectLinkType.Web:
+          return <FaGlobe {...iconProps} />;
+      }
+    },
+    [theme.PRIMARY_TEXT],
+  );
 
   return (
     <Container>
@@ -45,13 +73,18 @@ export const ProjectsSection: React.FC<IProjectsSectionProps> = ({
             </TeamAmountContainer>
           </FlexRow>
 
-          {!!project.appLink && (
-            <DefaultLink
-              preset={DefaultLinkPreset.Small}
-              color={theme.SECONDARY}
-              href={project.appLink}
-            />
-          )}
+          {!!project.appLinks &&
+            _.map(project.appLinks, ({ type, appLink }) => (
+              <FlexRow>
+                {renderLinkTypeIcon(type)}
+                <DefaultLink
+                  preset={DefaultLinkPreset.Small}
+                  color={theme.SECONDARY}
+                  href={appLink}
+                  key={appLink}
+                />
+              </FlexRow>
+            ))}
 
           <FeaturesContainer>
             {_.map(project.mainFeatures, feature => (
